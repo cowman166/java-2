@@ -4,7 +4,7 @@
 function printIndices(items) {
   // Replace this with your code
   for (const i in items) {
-    console.log("${items[i]} ${i}");
+    console.log(`${items[i]} ${i}`);
   }
 }
 
@@ -12,7 +12,7 @@ function printIndices(items) {
 function everyOtherItem(items) {
   // Replace this with your code
   const result = [];
-  for (const i in items.length){
+  for (let i = 0; i < items.length; i++){
     if (i % 2 === 0){
       result.push(items[i]);
     }
